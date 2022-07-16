@@ -1,0 +1,6 @@
+// This file was decompiled using SASCM.ini published on 2021-07-05
+{$CLEO .cs}
+
+0000: NOP 
+0662: printstring "Easy Gang / Fast Gun | Evolve-Rp | Samp-Rp" 
+0662: printstring "Автор скрипта | Ded_Fedot" 

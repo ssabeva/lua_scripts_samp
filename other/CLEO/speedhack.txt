@@ -1,0 +1,36 @@
+// This file was decompiled using SASCM.ini published on 2021-07-05
+{$CLEO .cs}
+
+0662: printstring "AUTHOR UNKNOWN" 
+0662: printstring "MISTER_GONWIK CHANGED THE SCRIPT FOR TRUCKERS" 
+0662: printstring "THANKS TO THE AUTHOR OF THE SCRIPT CODE" 
+0662: printstring "CHEAT-MASTER.RU (C)18.06.2012" 
+script_name "SPEEDHACK_FOR_TRUCKERS" 
+
+:SPEEDHACK_FOR_TRUCKERS_169
+wait 0 
+write_memory 7431746 size 4 value 100000.0 virtual_protect 1 
+write_memory 7431765 size 4 value 100000.0 virtual_protect 1 
+write_memory 12216218 size 4 value 13 virtual_protect 1 
+if and
+is_key_pressed 18 
+is_key_pressed 87 
+jf @SPEEDHACK_FOR_TRUCKERS_169 
+if 
+   Actor.Driving($PLAYER_ACTOR)
+jf @SPEEDHACK_FOR_TRUCKERS_169 
+0@ = Actor.CurrentCar($PLAYER_ACTOR)
+jf @SPEEDHACK_FOR_TRUCKERS_169 
+02E3: 1@ = car 0@ speed 
+if 
+   not 1@ >= 150.0 
+jf @SPEEDHACK_FOR_TRUCKERS_336 
+1@ *= 1.15 
+1@ += 4.0 
+Car.SetSpeedInstantly(0@, 1@)
+wait 50 
+jump @SPEEDHACK_FOR_TRUCKERS_169 
+
+:SPEEDHACK_FOR_TRUCKERS_336
+Car.SetSpeedInstantly(0@, 61.0)
+jump @SPEEDHACK_FOR_TRUCKERS_169 

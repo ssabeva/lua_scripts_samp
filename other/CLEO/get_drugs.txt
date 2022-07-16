@@ -1,0 +1,7 @@
+// This file was decompiled using SASCM.ini published on 2021-07-05
+{$CLEO .cs}
+
+0000: NOP 
+0662: printstring "Get Drugs: Evolve-Rp" 
+0662: printstring "Автор скрипта: Ded_Fedot" 
+0662: printstring "Контакты: vk.com/idedfedot" 

@@ -1,0 +1,13 @@
+// This file was decompiled using SASCM.ini published on 2021-07-05
+{$CLEO .cs}
+
+script_name 'RUN_SYLAR' 
+
+:RUN_SYLAR_19
+wait 0 
+if 
+   Player.Defined($PLAYER_CHAR)
+jf @RUN_SYLAR_19 
+Player.InfiniteRun($PLAYER_CHAR, True)
+jump @RUN_SYLAR_19 
+terminate_this_script 
